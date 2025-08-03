@@ -1,0 +1,11 @@
+product_id,product_name,category,price,stock
+101,Laptop,Electronics,55000,20
+102,Smartphone,Electronics,30000,50
+103,Desk,Furniture,7000,15
+104,Chair,Furniture,3500,30
+105,Headphones,Electronics,1500,100
+106,Mouse,Electronics,800,150
+107,Keyboard,Electronics,1200,120
+108,Sofa,Furniture,20000,10
+109,TV,Electronics,40000,25
+110,Table,Furniture,10000,18

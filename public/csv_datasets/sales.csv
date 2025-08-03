@@ -1,0 +1,10 @@
+month,product,units_sold,revenue
+Jan,Laptop,50,2750000
+Feb,Laptop,40,2200000
+Mar,Laptop,55,3025000
+Jan,Smartphone,100,3000000
+Feb,Smartphone,120,3600000
+Mar,Smartphone,90,2700000
+Jan,TV,20,800000
+Feb,TV,18,720000
+Mar,TV,25,1000000

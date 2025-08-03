@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar.js";
+import Footer from "./components/Footer.js";
+import Home from "./pages/Home.js";
+import Analysis from "./pages/Analysis.js";
+import History from "./pages/History.js";
+import "./App.css";
 
 function App() {
+  const [df, setDf] = useState(null);
+  const [history, setHistory] = useState([]);
+
+  const addHistory = (entry) => {
+    setHistory((prev) => [...prev, entry]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-container">
+        <Navbar />
+        <main className="main-content">
+          <Routes>
+            <Route
+              path="/"
+              element={<Home setDf={setDf} addHistory={addHistory} />}
+            />
+            <Route path="/analysis" element={<Analysis df={df} />} />
+            <Route path="/history" element={<History history={history} />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

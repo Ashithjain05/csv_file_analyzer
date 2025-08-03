@@ -1,0 +1,14 @@
+{
+  "name": "csv_file_analizer",
+  "version": "1.0.0",
+  "description": "A simple JavaScript DataFrame library for CSV analysis",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "dataframe",
+    "csv",
+    "analysis"
+  ],
+  "author": "Ashi",
+  "license": "MIT"
+}

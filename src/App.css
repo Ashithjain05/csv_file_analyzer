@@ -1,38 +1,85 @@
-.App {
+/* General Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f5f6fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #007bff;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.upload-section input[type="file"] {
+  margin-top: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Table Styles */
+.table-container {
+  margin: 20px auto;
+  overflow-x: auto;
+  width: 90%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #007bff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Summary Box */
+.summary-container {
+  text-align: left;
+  margin: 20px auto;
+  width: 80%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  overflow-x: auto;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  margin-top: auto;
+  font-size: 14px;
 }
